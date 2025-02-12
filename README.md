@@ -1,6 +1,6 @@
-# Humanloop Primer: Evaluating with Azure AI Models
+# HumanLoop Primer: Evaluating with Azure AI Models
 
-This repository is an exploration into understanding and using the Humanloop library for evaluating AI models, specifically focusing on running evaluations and comparing prompts using models hosted on Microsoft Azure's AI Foundry instances. The repository includes two main files: `eval.py` and `legalbench_abercrombie.ipynb`.
+This repository is an exploration into understanding and using the HumanLoop library for evaluating AI models, specifically focusing on running evaluations and comparing prompts using models hosted on Microsoft Azure's AI Foundry instances. The repository includes two main files: `eval.py` and `legalbench_abercrombie.ipynb`.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ This repository is an exploration into understanding and using the Humanloop lib
 
 ## Introduction
 
-This repository demonstrates the use of Humanloop for managing AI model evaluations, extracting specific information, and comparing model performance on different tasks. The evaluations are designed to provide insights into how well the models understand and generate content based on specific templates and datasets. Please note, this repo only uses the Free Tier, so no custom evaluations could be used, though an example has been added to the "evaluators" folder slightly modifying the demo version.
+This repository demonstrates the use of HumanLoop for managing AI model evaluations, extracting specific information, and comparing model performance on different tasks. The evaluations are designed to provide insights into how well the models understand and generate content based on specific templates and datasets. Please note, this repo only uses the Free Tier, so no custom evaluations could be used, though an example has been added to the "evaluators" folder slightly modifying the demo version.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Before you begin, make sure you have the following:
 
 - Python 3.11 or later
 - An Azure account with access to Azure AI Foundry
-- API keys for Humanloop and Azure AI, stored in a `.env` file
+- API keys for HumanLoop and Azure AI, stored in a `.env` file
 - Basic knowledge of Python and Jupyter notebooks
 
 ## Setting Up the Environment
@@ -59,7 +59,7 @@ This script demonstrates how to run a basic human loop prompt evaluation for ext
 
 1. **Load Environment Variables**: Ensure that your environment variables are correctly loaded.
 
-2. **Initialize Humanloop and Azure Clients**: The script initializes these clients using the provided API keys.
+2. **Initialize HumanLoop and Azure Clients**: The script initializes these clients using the provided API keys.
 
 3. **Execute the Evaluation**: Run the script to evaluate the model's ability to extract first names. The evaluation utilizes a set of predefined evaluators like Exact Match and Levenshtein Distance.
 
@@ -82,7 +82,7 @@ The notebook provides a framework for comparing two different language models on
 
 2. **Prepare the Template**: The script uses a specialized template asking the model to classify text according to a legal distinctiveness scale.
 
-3. **Run the Evaluation**: Execute the notebook to run evaluations on the dataset from Humanloop.
+3. **Run the Evaluation**: Execute the notebook to run evaluations on the dataset from HumanLoop.
 
    ```bash
    jupyter notebook legalbench_abercrombie.ipynb
@@ -94,8 +94,8 @@ The notebook provides a framework for comparing two different language models on
 
 ## Additional Information
 
-- **Humanloop Documentation**: Refer to [Humanloop's official documentation](https://humanloop.com/docs) for in-depth understanding and API usage.
+- **HumanLoop Documentation**: Refer to [HumanLoop's official documentation](https://humanloop.com/docs) for in-depth understanding and API usage.
 - **Azure AI Documentation**: Access [Azure AI documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/) for more details on AI Foundry Models.
 
 
-By following these instructions, you will be able to run and comprehend the evaluation of AI models using Humanloop and Azure AI, allowing for further explorations and developments in this field.
+By following these instructions, you will be able to run and comprehend the evaluation of AI models using HumanLoop and Azure AI, allowing for further explorations and developments in this field.
