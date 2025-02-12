@@ -5,16 +5,18 @@ from azure.ai.inference import ChatCompletionsClient
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.inference.models import SystemMessage, UserMessage
 
+'''
+This script is the default sample provided by Humanloop modified to support the Azure Inference SDK.
+'''
+
 load_dotenv()
 
 hl_key = os.getenv('HL_API_KEY')
 azure_key = os.getenv('AZURE_API_KEY')
 endpoint= os.getenv('LLAMA_ENDPOINT')
 
-print(hl_key)
-
 hl = Humanloop(api_key=hl_key)
-model = "Llama-3-3-70B-Instruct-fraher-ai"
+model = os.getenv('LLAMA_3_3_70B_MODEL')
 
 template = [
     {"role": "user", "content": "Extract the first name for '{{full_name}}'."},    
